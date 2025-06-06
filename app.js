@@ -1,8 +1,12 @@
 const express =require("express")
 const app=express()//storing it in app,app variable throughout project ma use garxam
 
+app.set("view engine","ejs")//ejs use gardai chu ,k k env set chaiyeko xa gardya vanye ko
+
+
 app.get("/",(req,res)=>{
-    res.send("yes");
+    // res.send("hello ");
+    res.render("home.ejs")
     });
 
 
